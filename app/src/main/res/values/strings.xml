@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Wishlist for pens</string>
+    <string name="Intro2">Purpose of this app</string>
+    <string name="Intro1">-Welcome-</string>
+    <string name="Purpose1">1. Keep Track of which Pens you are interested in getting</string>
+    <string name="Purpose2">2. Able to modify the wishlist up to your liking</string>
+    <string name="Purpose3">3. Aid you in deciding which pens you would like to get</string>
+    <string name="Intro3">Click on the brands name to navigate to the official website and find out more about pens</string>
+    <string name="Shop1">Uni-ball</string>
+    <string name="Shop2">Artline</string>
+    <string name="Shop3">Sarasa</string>
+    <string name="Shop4">Zebra</string>
+    <string name="Description1">Click to add pens to your wishlist</string>
+    <string name="ButtonDescription1">Add To Wishlist</string>
+    <string name="ButtonDescription2">Show WishList</string>
+    <string name="Description2">Click to view your current wishlist</string>
+    <string name="shop1">http://www.uniball.com.sg/</string>
+    <string name="shop2">https://artline.com.au/products/pens/</string>
+    <string name="shop3">https://www.zebrapen.com/product-category/brand/sarasa/</string>
+    <string name="shop4">https://www.zebrapen.com/product-category/brand/</string>
+    <string name="name">Name</string>
+</resources>
