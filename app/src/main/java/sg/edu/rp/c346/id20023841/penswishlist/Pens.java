@@ -49,7 +49,7 @@ public class Pens implements Serializable {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -57,7 +57,7 @@ public class Pens implements Serializable {
         return nibsize;
     }
 
-    public void setNibsize(float nibsize) {
+    public void setNibsize(double nibsize) {
         this.nibsize = nibsize;
     }
 

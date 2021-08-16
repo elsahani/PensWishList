@@ -51,6 +51,14 @@ public class CustomAdapter extends ArrayAdapter {
         tvPenNibSize.setText(Double.toString(currentVersion.getNibsize()));
         rbs.setRating(currentVersion.getStars());
 
+        double penprice = currentVersion.getPrice();
+
+        if (penprice <= 2.00){
+            image.setImageResource(R.drawable.cheap);
+        }else{
+            image.setVisibility(View.INVISIBLE);
+        }
+
         return rowView;
     }
 
