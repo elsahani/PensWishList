@@ -17,20 +17,22 @@
         android:id="@+id/textViewShowColour"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/textview" />
+        android:text="@string/textview"
+        android:textColor="#404040" />
 
     <TextView
         android:id="@+id/textViewShowPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/textview"
-        android:textColor="#AD1E1C1C" />
+        android:textColor="#AD333131" />
 
     <TextView
         android:id="@+id/textViewShowNibSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/textview" />
+        android:text="@string/textview"
+        android:textColor="#706D6D" />
 
     <LinearLayout
         android:layout_width="match_parent"

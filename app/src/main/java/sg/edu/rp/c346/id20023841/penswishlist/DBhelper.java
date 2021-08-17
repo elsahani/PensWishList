@@ -60,7 +60,7 @@ public class DBhelper extends SQLiteOpenHelper {
     }
 
     public ArrayList<Pens> getAllPens() {
-        ArrayList<Pens> songs = new ArrayList<Pens>();
+        ArrayList<Pens> pens = new ArrayList<Pens>();
 
         String selectQuery = "SELECT " + COLUMN_ID + ", "
                 + COLUMN_NAME + ", "
@@ -81,17 +81,17 @@ public class DBhelper extends SQLiteOpenHelper {
                 double nibsize = cursor.getDouble(4);
                 int stars = cursor.getInt(5);
 
-                Pens pens = new Pens(id,name, colour, price, nibsize, stars);
-                songs.add(pens);
+                Pens newPens = new Pens(id,name, colour, price, nibsize, stars);
+                pens.add(newPens);
             } while (cursor.moveToNext());
         }
         cursor.close();
         db.close();
-        return songs;
+        return pens;
     }
 
     public ArrayList<Pens> getAllPensByStars(int starsFilter) {
-        ArrayList<Pens> songs = new ArrayList<Pens>();
+        ArrayList<Pens> pens = new ArrayList<Pens>();
 
         SQLiteDatabase db = this.getReadableDatabase();
         String[] columns = {COLUMN_ID, COLUMN_NAME, COLUMN_COLOUR, COLUMN_PRICE, COLUMN_NIBSIZE, COLUMN_STARS};
@@ -110,12 +110,12 @@ public class DBhelper extends SQLiteOpenHelper {
                 int stars = cursor.getInt(5);
 
                 Pens newPens = new Pens(id,name, colour, price, nibsize, stars);
-                songs.add(newPens);
+                pens.add(newPens);
             } while (cursor.moveToNext());
         }
         cursor.close();
         db.close();
-        return songs;
+        return pens;
 
     }
 

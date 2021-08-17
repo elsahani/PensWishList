@@ -1,8 +1,11 @@
 package sg.edu.rp.c346.id20023841.penswishlist;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -35,7 +38,9 @@ public class ShowActivity extends AppCompatActivity {
         Colour.clear();
         Colour.addAll(dbh.getColour());
         spinnerAdapter.notifyDataSetChanged();
-    };
+    }
+
+    ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,4 +103,4 @@ public class ShowActivity extends AppCompatActivity {
         });
 
     }
-}
+    }
